@@ -230,16 +230,17 @@ public class ProjectResource {
 			} else {
 				return null;
 			}
-		} else if (token != null) {
-			Cookie cookie = new Cookie("token", token);
-			User user = LoginDao.getToken(new Cookie[] {cookie});
-			
-			if (user != null){
-				return users;
-			} else {
-				return null;
-			}
-		}
+		} 
+//		else if (token != null) {
+//			Cookie cookie = new Cookie("token", token);
+//			User user = LoginDao.getToken(new Cookie[] {cookie});
+//			
+//			if (user != null){
+//				return users;
+//			} else {
+//				return null;
+//			}
+//		}
 		return null;
 	}
 	

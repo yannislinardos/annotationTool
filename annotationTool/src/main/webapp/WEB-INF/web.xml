@@ -270,6 +270,20 @@
     <url-pattern>/CopyStandard</url-pattern>
   </servlet-mapping>
 
+     <servlet>
+    <servlet-name>Jersey Servlet</servlet-name>
+    <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+             <init-param>
+          <param-name>jersey.config.server.provider.packages</param-name>
+          <param-value>REST</param-value>
+      </init-param>
+                  <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Jersey Servlet</servlet-name>
+    <url-pattern>/webapi/*</url-pattern>
+</servlet-mapping>
+
 <!-- SSL settings. only allow HTTPS access to annotationTool -->
     <security-constraint>
     <web-resource-collection>

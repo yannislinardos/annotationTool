@@ -24,6 +24,31 @@ import util.Queries.Rights;
 
 @Path("/user")
 public class UserResource {
+	
+	
+	@GET
+	@Produces({MediaType.APPLICATION_JSON})
+	@Path("/test/{username}")
+	public UserForRest getUserTEST(@CookieParam("token") String token, @CookieParam("adminToken") String adminToken, 
+			@PathParam("username") String username) {
+		
+		if (adminToken != null) {
+			Cookie cookie = new Cookie("adminToken", adminToken);
+			User user = LoginDao.getToken(new Cookie[] {cookie});
+			
+			if (user != null){
+				User user1 = Queries.getUser(username);
+				UserForRest ret = new UserForRest();
+				ret.setUser(user1);
+				ret.setPassword("111");
+				return ret;
+			} else {
+				return null;
+			}
+		} 
+
+		return null;
+	}
 
 	@GET
 	@Produces({MediaType.APPLICATION_JSON})
@@ -40,16 +65,17 @@ public class UserResource {
 			} else {
 				return null;
 			}
-		} else if (token != null) {
-			Cookie cookie = new Cookie("token", token);
-			User user = LoginDao.getToken(new Cookie[] {cookie});
-			
-			if (user != null){
-				return Queries.getUser(username);
-			} else {
-				return null;
-			}
-		}
+		} 
+//		else if (token != null) {
+//			Cookie cookie = new Cookie("token", token);
+//			User user = LoginDao.getToken(new Cookie[] {cookie});
+//			
+//			if (user != null){
+//				return Queries.getUser(username);
+//			} else {
+//				return null;
+//			}
+//		}
 		return null;
 	}
 	
@@ -68,16 +94,17 @@ public class UserResource {
 			} else {
 				return null;
 			}
-		} else if (token != null) {
-			Cookie cookie = new Cookie("token", token);
-			User user = LoginDao.getToken(new Cookie[] {cookie});
-			
-			if (user != null){
-				return Queries.getAllUsers();
-			} else {
-				return null;
-			}
 		}
+//		else if (token != null) {
+//			Cookie cookie = new Cookie("token", token);
+//			User user = LoginDao.getToken(new Cookie[] {cookie});
+//			
+//			if (user != null){
+//				return Queries.getAllUsers();
+//			} else {
+//				return null;
+//			}
+//		}
 		return null;
 	}
 	
@@ -98,16 +125,17 @@ public class UserResource {
 			} else {
 				return null;
 			}
-		} else if (token != null) {
-			Cookie cookie = new Cookie("token", token);
-			User user = LoginDao.getToken(new Cookie[] {cookie});
-			
-			if (user != null){
-				return Queries.getProjectsFromUser(username);
-			} else {
-				return null;
-			}
-		}
+		} 
+//		else if (token != null) {
+//			Cookie cookie = new Cookie("token", token);
+//			User user = LoginDao.getToken(new Cookie[] {cookie});
+//			
+//			if (user != null){
+//				return Queries.getProjectsFromUser(username);
+//			} else {
+//				return null;
+//			}
+//		}
 		return null;
 	}
 		
