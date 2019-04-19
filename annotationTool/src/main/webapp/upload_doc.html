@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Annotator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="styles/all.css">
+
+</head>
+
+<body>
+
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-sm fixed-top navbar-custom">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="30" height="30"
+          class="d-inline-block align-top" alt="">nnotator</a>
+
+      <!-- Links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="profile.html">Profile</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="library.html">Library</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="standards.html">Standards</a>
+        </li>
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            Upload
+          </a>
+          <div class="dropdown-menu active">
+            <a class="dropdown-item" href="upload_doc.html">Document</a>
+            <a class="dropdown-item" href="upload_text.html">Text</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Library -->
+  <div class="container">
+    <div class="card">
+      <div class="card-body">
+        <h2>Documents upload</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus sapien vitae viverra consequat.
+          Proin sem tellus, tincidunt ut leo auctor, vestibulum suscipit nunc. Duis imperdiet risus sit amet mattis
+          rhoncus. Vivamus non velit ullamcorper enim auctor pulvinar. Maecenas lobortis mollis ultrices. Pellentesque
+          habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+        <form>
+          <div class="form-group">
+            <input name="filesToUpload[]" id="filesToUpload" type="file" class="form-control-file border" multiple
+              onchange="makeFileList();">
+          </div>
+        </form>
+        <ul class="list-group" id="fileList">
+          <li class="list-group-item">No files selected</li>
+        </ul>
+        <button style="display:none" id="submitButton" type="button"
+          class="btn btn-outline-primary btn-block">Upload</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-copyright">
+      <p class="text-center">© 2019 Copyright: University of Twente</p>
+    </div>
+  </footer>
+</body>
+
+<script>
+  function makeFileList() {
+    document.getElementById("submitButton").style.display = "block";
+
+    var input = document.getElementById("filesToUpload");
+    var ul = document.getElementById("fileList");
+    while (ul.hasChildNodes()) {
+      ul.removeChild(ul.firstChild);
+    }
+
+    for (var i = 0; i < input.files.length; i++) {
+      var li = document.createElement("li");
+      li.className = 'list-group-item';
+      li.innerHTML = input.files[i].name;
+      ul.appendChild(li);
+    }
+    if (!ul.hasChildNodes()) {
+      var li = document.createElement("li");
+      li.className = 'list-group-item';
+      li.innerHTML = 'No Files Selected';
+      ul.appendChild(li);
+      document.getElementById("submitButton").style.display = "none";
+    }
+  }
+
+</script>
+
+</html>
