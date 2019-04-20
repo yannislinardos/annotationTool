@@ -41,7 +41,7 @@
 								<h3 class="card-title">Login Page</h3>
 								<div class="embed-responsive embed-responsive-16by9 card-img-top">
 								<iframe class="embed-responsive-item"
-									src="https://www.youtube.com/embed/sDUncJCg27Y"
+									src="https://www.youtube.com/embed/cqqIemw5ZQk"
 									allowfullscreen></iframe>
 							</div>
 								<ul class="list-group list-group-flush">
@@ -59,7 +59,7 @@
 								<h3 class="card-title">Upload Page</h3>
 								<div class="embed-responsive embed-responsive-16by9 card-img-top">
 								<iframe class="embed-responsive-item"
-									src="https://www.youtube.com/embed/KZwRlTn0DQI"
+									src="https://www.youtube.com/embed/d_bkYKnWORI"
 									allowfullscreen></iframe>
 							</div>
 								<div class="card-header">
@@ -75,7 +75,7 @@
 								</ul>
 								<div class="embed-responsive embed-responsive-16by9 card-img-top">
 								<iframe class="embed-responsive-item"
-									src="https://www.youtube.com/embed/JCVY21L6UUw"
+									src="https://www.youtube.com/embed/ZZA32yDNq_Y"
 									allowfullscreen></iframe>
 							</div>
 								<div class="card-header">
@@ -91,7 +91,7 @@
 								</ul>
 								<div class="embed-responsive embed-responsive-16by9 card-img-top">
 								<iframe class="embed-responsive-item"
-									src="https://www.youtube.com/embed/UB9KOYjqE-A"
+									src="https://www.youtube.com/embed/5x3mlh-bZAA"
 									allowfullscreen></iframe>
 							</div>
 							
@@ -114,7 +114,7 @@
 								<h3 class="card-title">Annotation Page</h3>
 								<div class="embed-responsive embed-responsive-16by9 card-img-top">
 								<iframe class="embed-responsive-item"
-									src="https://www.youtube.com/embed/QLXC77ajpJA"
+									src="https://www.youtube.com/embed/XORz9hDm6vg"
 									allowfullscreen></iframe>
 							</div>
 								<p class="card-text">In this page one can annotate reports.
@@ -149,7 +149,7 @@
 								<h3 class="card-title">Profile Page</h3>
 								<div class="embed-responsive embed-responsive-16by9 card-img-top">
 								<iframe class="embed-responsive-item"
-									src="https://www.youtube.com/embed/hdZoNbiC_sw"
+									src="https://www.youtube.com/embed/9EgqzjA3svI"
 									allowfullscreen></iframe>
 							</div>
 								<div class="card-header">
@@ -204,9 +204,10 @@
 								%>
 								<div class="embed-responsive embed-responsive-16by9 card-img-top">
 								<iframe class="embed-responsive-item"
-									src="https://www.youtube.com/embed/43YFP-dyCao"
+									src="https://www.youtube.com/embed/hU5w__jmakM"
 									allowfullscreen></iframe>
 							</div>
+							
 								<div class="card-header">
 									<b>Manage Users Tab</b>
 								</div>
@@ -220,7 +221,7 @@
 								</ul>
 								<div class="embed-responsive embed-responsive-16by9 card-img-top">
 								<iframe class="embed-responsive-item"
-									src="https://www.youtube.com/embed/qLJpLubGco0"
+									src="https://www.youtube.com/embed/6yQlLEwBp-U"
 									allowfullscreen></iframe>
 							</div>
 								<div class="card-header">
@@ -236,7 +237,7 @@
 								</ul>
 								<div class="embed-responsive embed-responsive-16by9 card-img-top">
 								<iframe class="embed-responsive-item"
-									src="https://www.youtube.com/embed/F4quSfuOhQA"
+									src="https://www.youtube.com/embed/b3B8gtr8v1g"
 									allowfullscreen></iframe>
 							</div>
 								<div class="card-header">
@@ -260,7 +261,7 @@
 								</ul>
 								<div class="embed-responsive embed-responsive-16by9 card-img-top">
 								<iframe class="embed-responsive-item"
-									src="https://www.youtube.com/embed/buwAFEM4Ryo"
+									src="https://www.youtube.com/embed/eK-cl5XxHYk"
 									allowfullscreen></iframe>
 							</div>
 								<div class="card-header">
