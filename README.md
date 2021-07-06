@@ -1,4 +1,4 @@
-# Annotation Tool for Radiology Reports
+# Annotation Tool for NLP
 
 The radiologists of MRON in collaboration with ZGT (ZiekenhuisGroep Twente / Hospital Group Twente) are doing research on innovations in radiology using AI. For a large part, this research focuses on Natural Language Processing technology, because whenever radiologists evaluate an X-Ray/CT/MRI/etc, they write a textual report. Although they call it a "structured report", it is plain text, unstructured data from a computer science perspective. The "structured" refers to the fact that it complies with the international BI-RADS standard. Their goal is to use Natural Language Processing in order to extract actual structured data (i.e. in XML or json format) from a “structured” natural language report.
 
